@@ -20,7 +20,7 @@ object Sum : Operation() {
         )
         is OperationState ->
             OperationState(
-                prevNumber = state.prevNumber + state.currentNumber,
+                prevNumber = state.operation.getNewCurrent(state),
                 operation = Sum,
                 current = 0.0
             )
@@ -42,9 +42,27 @@ object Substract : Operation() {
         )
         is OperationState ->
             OperationState(
-                prevNumber = state.prevNumber - state.currentNumber,
+                prevNumber = state.operation.getNewCurrent(state),
                 operation = Sum,
                 current = 0.0
+            )
+    }
+}
+
+object Equal : Operation() {
+    override fun getNewCurrent(state: CalculatorState) = state.currentNumber
+
+    override fun execute(state: CalculatorState): CalculatorState = when (state) {
+        is InitialState -> OperationState(
+            prevNumber = state.currentNumber,
+            operation = Equal,
+            current = 0.0
+        )
+        is OperationState ->
+            OperationState(
+                prevNumber = 0.0,
+                operation = Equal,
+                current = state.operation.getNewCurrent(state)
             )
     }
 }
