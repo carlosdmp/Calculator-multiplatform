@@ -17,6 +17,7 @@ class ViewController: UIViewController, CalculatorView {
         super.viewDidLoad()
         presenter = CalculatorPresenter(view: self)
         label.text = ""
+        bottomLabel.text = Common().getHelloMessage()
     }
 
     override func didReceiveMemoryWarning() {
@@ -91,4 +92,5 @@ class ViewController: UIViewController, CalculatorView {
         presenter.onOperation(op: Equal())
     }
     
+    @IBOutlet weak var bottomLabel: UILabel!
 }

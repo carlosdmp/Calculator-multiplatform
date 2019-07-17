@@ -1,5 +1,5 @@
 package calculator
 
-expect interface CalculatorView{
+interface CalculatorView {
     fun showState(state: CalculatorState)
 }

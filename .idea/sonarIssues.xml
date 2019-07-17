@@ -18,7 +18,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/commonMain/kotlin/calculator/CalculatorView.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/commonMain/kotlin/calculator/Operations.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/commonMain/kotlin/sample/Sample.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/iosTest/kotlin/sample/SampleTestsIOS.kt">
           <value>
             <set />
           </value>

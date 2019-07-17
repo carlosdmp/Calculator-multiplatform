@@ -10,8 +10,8 @@ expect object Platform {
 
 fun hello(): String = "Hello from ${Platform.name}"
 
-class Proxy {
-    fun proxyHello() = hello()
+class Common {
+    fun getHelloMessage() = hello()
 }
 
 fun main() {

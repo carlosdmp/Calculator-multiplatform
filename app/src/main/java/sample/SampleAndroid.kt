@@ -26,6 +26,9 @@ class MainActivity : AppCompatActivity(), CalculatorView {
         super.onCreate(savedInstanceState)
         Sample().checkMe()
         setContentView(R.layout.activity_main)
+
+        findViewById<TextView>(R.id.tv_bottom_label).text = Common().getHelloMessage()
+
         listOf(
             R.id.b_op1, R.id.b_op2, R.id.b_op3,
             R.id.b_op4, R.id.b_op5, R.id.b_op6,
