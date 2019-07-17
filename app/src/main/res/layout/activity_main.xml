@@ -8,7 +8,7 @@
         tools:context=".MainActivity">
 
     <TextView
-            android:text="wadad"
+            android:text=":)"
             android:textSize="24sp"
             android:layout_marginTop="20dp"
             android:textAlignment="textEnd"
