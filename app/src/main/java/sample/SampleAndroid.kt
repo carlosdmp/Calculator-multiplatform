@@ -40,5 +40,14 @@ class MainActivity : AppCompatActivity(), CalculatorView {
         findViewById<Button>(R.id.b_op_plus).setOnClickListener {
             presenter.onOperation(Sum)
         }
+        findViewById<Button>(R.id.b_op_sub).setOnClickListener {
+            presenter.onOperation(Substract)
+        }
+        findViewById<Button>(R.id.b_equal).setOnClickListener {
+            presenter.onOperation(Equal)
+        }
+        findViewById<Button>(R.id.b_clear).setOnClickListener {
+            presenter.onOperation(Clear)
+        }
     }
 }
