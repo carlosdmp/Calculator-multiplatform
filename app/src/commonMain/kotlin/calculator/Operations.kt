@@ -43,7 +43,7 @@ object Substract : Operation() {
         is OperationState ->
             OperationState(
                 prevNumber = state.operation.getNewCurrent(state),
-                operation = Sum,
+                operation = Substract,
                 current = state.operation.getNewCurrent(state)
             )
     }
